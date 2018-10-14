@@ -1,0 +1,290 @@
+.container {
+    max-width: 992px;
+}
+.page-enter-active, .page-leave-active {
+    transition: opacity .4s
+  }
+  .page-enter, .page-leave-active {
+    opacity: 0
+  }
+
+.todo {
+    padding: 50px 0;
+    .logo {
+        margin: auto;   
+    }
+    h1 {
+        font-size: 20px;
+        color: #006666;
+        text-align: center;
+    }
+    .panel {
+        margin: 20px 0;
+    }
+}
+
+.list {
+    h2 {
+        font-size: 15px;
+        .completeAll {
+            font-size: 12px;
+            cursor: pointer;
+            background: transparent;
+            border: 1px solid #ccc;
+            float: right;
+            border-radius: 3px;
+            margin-left: 5px;
+        }
+    }
+    ul {
+        list-style:none;
+        padding-left: 0;
+        padding: 10px;
+        background: #eee;
+        box-shadow: 0px 0px 2px;
+        li {
+            position: relative;
+            display: flex;
+            background: #006666;
+            padding: 3px 10px;
+            border-radius: 3px;
+            margin-bottom: 10px;
+            &:last-child {
+                margin-bottom: 0px;
+            }
+            label {
+                color: #fff;
+            }
+            .complete {
+                height: 17px;
+                background: white;
+                color: #006666;
+                padding: 0px 6px;
+                font-size: 11px;
+                position: absolute;
+                top: 8px;
+                right: 34px;
+                font-weight: bold;
+                border-radius: 1px;
+            }
+            .re {
+                right: 8px;
+            }
+            .custom-control {
+                padding-left: 0;
+            }
+            input[type="checkbox"] {
+                background: black;
+                margin-right: 15px;
+                position: relative;
+                top: 6px;
+            }
+            span {
+                color: #fff;
+                font-size: 15px;
+            }
+            button {
+                margin-left: auto;
+                background: transparent;
+                border: none;
+                cursor: pointer;
+                color: #fff;
+            }
+            del {
+
+            }
+            &:hover .complete {
+                display: block;
+            }
+        }
+        .complete {
+            background: orange;
+        }
+    }
+    .comp {
+        border: 1px solid #ccc;
+        box-shadow: none;
+        background: #fff;
+    }
+}
+.input-list {
+    margin-bottom: 20px;
+    .form-put{
+        display: flex;
+        input[type="text"] {
+        width: 100%;
+        padding: 0 10px;
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+        border: 1px solid #bbb;
+        }
+        button {
+            background: transparent;
+            border: 1px solid #bbb;
+            border-left: none;
+            border-top-right-radius: 3px;
+            border-bottom-right-radius: 3px;
+        }
+    }
+}
+// .............menu..............
+
+header {
+    width: 100%;
+    margin-bottom: 20px;
+    background: #eee;
+    
+}
+
+.cart-li {
+    background: #bbb;
+    color: #fff;
+    padding: 10px 42px !important;
+}
+.cart-li.nuxt-link-exact-active {
+    background: #50b0b0 !important;
+}
+.cart-li:hover {
+    background: #50b0b0 !important;
+}
+.nuxt-link-exact-active {
+    background: #006666;
+    color: #fff;
+}
+a {
+    text-decoration: none;
+    color :#555;
+    padding: 10px 25px;
+    display: block; 
+}
+ul >li >a:hover {
+    background: #ccc;
+    color: #fff;
+}
+.ul-header {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+ul li {
+    position: relative;
+}
+ul li .count {
+    position: absolute;
+    right: 6px;
+    top: 8px;
+    background: #ccc;
+    color: #555;
+    height: 22px;
+    font-size: 15px;
+    width: 22px;
+    display: block;
+    display: flex;
+    justify-content: center;
+    border-radius: 100%;
+    font-weight: bold;
+    box-shadow: 0px 0px 5px black;
+}
+ul li a {
+    text-decoration: none !important;
+}
+
+// -----------------
+.products {
+    h1 {
+      font-size: 13px;
+      display: block;
+      margin: 5px 0;
+      }
+      ul {
+        list-style: none;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+      }
+      ul li {
+        text-align: center;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin: 0 10px;
+        overflow: hidden;
+        padding: 0 5px;
+        margin-bottom: 10px;
+        &:hover {
+          background: #86d1d1;
+        }
+        a {
+            padding: 0px;
+        }
+      }
+      ul li a:hover {
+        background: none !important;
+      }
+      button {
+        background: #006666;
+        color: #fff;
+        border: none;
+        padding: 3px 10px;
+        border-radius: 3px;
+        margin: 5px 0;
+      }
+      button:disabled {
+        background: #3fc3c3;
+      }
+      img {
+        width: 80%;
+        margin-top: 5px;
+        border-bottom: 1px solid #ccc;
+      }
+      p {
+        font-size: 13px;
+        margin: 0;
+        color: red;
+      }
+ }
+
+.cart {
+    padding: 0 20px;
+h1{
+    font-size: 15px;
+    span {
+        float:right;
+        background: orange;
+        color: #fff;
+        padding: 5px;
+        border-radius: 3px;
+    }
+    margin-bottom: 20px;
+
+}
+.item {
+    align-items: center;
+    background: #eee;
+    padding: 10px 10px;
+    margin-bottom: 5px;
+    display: grid;
+    grid-template-columns: 50px auto 50px 100px 30px;
+    span {
+        font-size: 13px;
+    }
+    input {
+    width: 40px;
+    text-align: center;
+    }
+    img {
+        width: 40px;
+    }
+    .name {
+        font-weight: bold;
+        padding: 0 20px;
+    }
+    p {
+        margin: 0;
+        display: flex;
+    }
+}
+.removeCart {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+}
+}
